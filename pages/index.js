@@ -82,7 +82,7 @@ export default function Home() {
             </Head>
             <Navbar variant="floating">
                 <Navbar.Brand>
-                    <Text h3 css={{textGradient: "45deg, $blue600 -20%, $pink600 50%"}}>Lumatozer + Autm</Text>
+                    <Text h3 css={{textGradient: "45deg, $blue600 -20%, $pink600 50%"}}>Lumatozer + AUTM-Labs</Text>
                 </Navbar.Brand>
                 <Navbar.Content activeColor="secondary">
                 <Navbar.Link isActive href="/">Home</Navbar.Link>
@@ -114,9 +114,9 @@ export default function Home() {
                     {games.map((x) => {
                         return (
                             <>
-                            <Grid xs={6} sm={3}>
-                            {Card4(x.name,x.img,x.link,x.crackedby,x.repack)}
-                        </Grid>
+                                <Grid xs={6} sm={3}>
+                                    {Card4(x.name,x.img,x.link,x.crackedby,x.repack)}
+                                </Grid>
                             </>
                         )
                     })}
