@@ -18,12 +18,10 @@ const theme = createTheme({
 	}
   })
 
-function App({ Component, pageProps: { session, ...pageProps } }) {
+function App({ Component, pageProps: {...pageProps } }) {
   return (
 	<NextUIProvider theme={theme}>
-		<SessionProvider session={session}>
 	  	<Component {...pageProps} />
-		</SessionProvider>
 	</NextUIProvider>
   );
 }
